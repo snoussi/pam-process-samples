@@ -6,12 +6,54 @@ package com.bpifrance.https_rest_call;
 
 public class Token implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Token() {
-    }
+	private java.lang.String tt;
+	private java.lang.String val;
+	private java.lang.String v;
+	private long exp;
 
+	public Token() {
+	}
 
+	public java.lang.String getTt() {
+		return this.tt;
+	}
 
+	public void setTt(java.lang.String tt) {
+		this.tt = tt;
+	}
+
+	public java.lang.String getVal() {
+		return this.val;
+	}
+
+	public void setVal(java.lang.String val) {
+		this.val = val;
+	}
+
+	public java.lang.String getV() {
+		return this.v;
+	}
+
+	public void setV(java.lang.String v) {
+		this.v = v;
+	}
+
+	public long getExp() {
+		return this.exp;
+	}
+
+	public void setExp(long exp) {
+		this.exp = exp;
+	}
+
+	public Token(java.lang.String tt, java.lang.String val, java.lang.String v,
+			long exp) {
+		this.tt = tt;
+		this.val = val;
+		this.v = v;
+		this.exp = exp;
+	}
 
 }
